@@ -16,7 +16,12 @@
 
     <div id="listPhoto">
       <h1>List Photo</h1>
-      <div class="list" v-for="photo in listPhoto" :key="listPhoto.id">Photo: <img src='{{ photo.thumbnailUrl }}' /> {{ photo.thumbnailUrl }}</div>
+      <div 
+        class="list" 
+        v-for="photo in listPhoto" 
+        :key="listPhoto.id">
+        Photo: <img :src='photo.thumbnailUrl' /> {{ photo.thumbnailUrl }}
+      </div>
     </div>
   </div>
 
